@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NextApp.View.Login.Login"
+             Title="Login">
+    <Grid>
+        <StackLayout>
+            <StackLayout Padding="8" VerticalOptions="Start" HorizontalOptions="Center">
+                <Label Text="ENTRAR" FontSize="20" TextColor="white" />
+            </StackLayout>
+
+            <ImageButton Source="flecha.png" />
+        </StackLayout>
+
+            
+    </Grid>
+
+</ContentPage>
