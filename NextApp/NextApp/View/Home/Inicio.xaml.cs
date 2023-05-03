@@ -1,0 +1,23 @@
+﻿/*
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+using Xamarin.Forms;
+using Xamarin.Forms.Xaml;
+
+namespace NextApp.View.Pagina_Inicial
+{
+    [XamlCompilation(XamlCompilationOptions.Compile)]
+    public partial class Inicio : ContentPage
+    {
+        public Inicio()
+        {
+            InitializeComponent();
+            NavigationPage.SetHasNavigationBar(this, false);
+        }
+    }
+}
+*/
