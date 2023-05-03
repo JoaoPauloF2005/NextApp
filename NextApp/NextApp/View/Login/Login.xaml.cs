@@ -17,5 +17,11 @@ namespace NextApp.View.Login
             InitializeComponent();
             NavigationPage.SetHasNavigationBar(this, false);
         }
+
+        private void ImageButton_Clicked(object sender, EventArgs e)
+        {
+            App.Current.MainPage = new NavigationPage(new View.Pagina_Inicial.Inicio());
+
+        }
     }
 }

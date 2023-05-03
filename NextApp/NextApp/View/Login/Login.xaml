@@ -1,18 +1,49 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:control="clr-namespace:Xamarin.Forms.MaskedEntry;assembly=Xamarin.Forms.MaskedEntry" xmlns:local="clr-namespace:NextApp.CustomRenderer"
              x:Class="NextApp.View.Login.Login"
-             Title="Login">
-    <Grid>
+             Title="Login"
+             BackgroundColor="black">
+    
+    <ContentPage.Content>
         <StackLayout>
-            <StackLayout Padding="8" VerticalOptions="Start" HorizontalOptions="Center">
-                <Label Text="ENTRAR" FontSize="20" TextColor="white" />
-            </StackLayout>
 
-            <ImageButton Source="flecha.png" />
-        </StackLayout>
+            <Grid ColumnDefinitions="*, *, *">
+
+
+                <Label Text="ENTRAR" FontSize="15" FontAttributes="Bold"  TextColor="white"  Grid.Column="1" Grid.ColumnSpan="2" HeightRequest="33" Margin="0, 10, 0, 0" />
+                <ImageButton Source="flecha.png" BackgroundColor="Transparent" HeightRequest="20" Margin="5" HorizontalOptions="Start" Clicked="ImageButton_Clicked"/>
 
             
-    </Grid>
+      
+             </Grid>
+
+
+            <StackLayout>
+
+                <Frame VerticalOptions="Center" HorizontalOptions="Center" BorderColor="Transparent">
+                    <Grid RowDefinitions="*, *, *, *, *, *, *, *">
+
+                        <Label Text="CPF:" FontSize="20" Grid.Row="0" TextColor="Black" />
+                        <control:MaskedEntry x:Name="user_login" Grid.Row="1" Mask="XXX.XXX.XXX-XX"
+                                             PlaceholderColor="black"
+                                             TextColor="Black" Keyboard="Numeric"
+                                             ClearButtonVisibility="WhileEditing" />
+
+
+                        <Label Text="SENHA:" FontSize="20" Grid.Row="2" TextColor="Black"/>
+                        <local:MyCustomeEntry x:Name="user_password" Grid.Row="3" Placeholder="Digite a sua senha"
+                                              PlaceholderColor="Gray" TextColor="Black" IsPassword="True"
+                                              ClearButtonVisibility="WhileEditing" />
+
+                    </Grid>
+                </Frame>
+
+            </StackLayout>
+
+
+        </StackLayout>
+    </ContentPage.Content>
 
 </ContentPage>
