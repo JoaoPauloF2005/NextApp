@@ -23,5 +23,10 @@ namespace NextApp.View.Login
             App.Current.MainPage = new NavigationPage(new View.Pagina_Inicial.Inicio());
 
         }
+
+
     }
+
+
 }
+
