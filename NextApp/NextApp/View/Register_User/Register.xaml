@@ -36,7 +36,8 @@
                 BorderColor="ForestGreen"
                 BorderWidth="1.5"
                 CornerRadius="50"
-                FontAttributes="Bold">
+                FontAttributes="Bold"
+                Margin="30">
             </Button>
 
 

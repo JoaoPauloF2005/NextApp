@@ -27,7 +27,8 @@
                 BorderWidth="1.5"
                 CornerRadius="50"
                 Clicked="Button_Clicked"
-                FontAttributes="Bold">
+                FontAttributes="Bold"
+                Margin="20">
             </Button>
 
             <Label HorizontalOptions="Center">
