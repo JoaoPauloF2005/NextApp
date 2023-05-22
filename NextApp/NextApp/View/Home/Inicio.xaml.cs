@@ -19,5 +19,7 @@ namespace NextApp.View.Pagina_Inicial
             NavigationPage.SetHasNavigationBar(this, false);
         }
     }
+
+
 }
 */
