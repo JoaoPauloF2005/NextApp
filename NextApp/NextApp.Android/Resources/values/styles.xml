@@ -16,4 +16,11 @@
     <!--<item name="colorAccent">#FF4081</item>-->
 	  <item name="colorAccent">#ffff</item> 
   </style>
+
+	<style name="Theme.Splash" parent="android:Theme">
+		<item name="android:windowBackground">@drawable/logo</item>
+		<item name="android:windowNoTitle">true</item>
+		<item name="android:windowFullscreen">true</item>
+		<item name="colorPrimaryDark">#ffff</item>
+	</style>
 </resources>
