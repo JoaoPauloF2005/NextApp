@@ -43,8 +43,7 @@
                 BorderColor="black"
                 BorderWidth="1.5"
                 CornerRadius="50"
-                FontAttributes="Bold"
-                Margin="0">
+                FontAttributes="Bold">
             </Button>
 
             </StackLayout>
