@@ -4,41 +4,50 @@
              xmlns:control="clr-namespace:Xamarin.Forms.MaskedEntry;assembly=Xamarin.Forms.MaskedEntry" xmlns:local="clr-namespace:NextApp.CustomRenderer"
              x:Class="NextApp.View.Register_User.Register"
              Title="Register"
-             BackgroundColor="black">
+             BackgroundColor="white">
     <ContentPage.Content>
+
         <StackLayout Padding="40"  VerticalOptions="Start"  HorizontalOptions="FillAndExpand">
+
+            
 
             <Label Text="O primeiro passo para abrir sua conta é informar alguns dados :)" 
                    HorizontalTextAlignment="Center"
-                   TextColor="white"
+                   TextColor="black"
                    FontAttributes="Bold"
                    FontFamily="Font"/>
 
+            <StackLayout Margin="0, 50, 0, 0">
+
+                <Entry x:Name="txt_nome" Placeholder="Nome completo" FontAttributes="Bold" TextColor="black" PlaceholderColor="black" Margin="10"></Entry>
+
+                <control:MaskedEntry x:Name="txt_cpf" Placeholder="CPF" FontAttributes="Bold" TextColor="black" PlaceholderColor="black" Keyboard="Numeric" Mask="XXX.XXX.XXX-XX" Margin="10"/>
+ 
+                <control:MaskedEntry x:Name="txt_data_nasc" Placeholder="Data de nascimento" FontAttributes="Bold" TextColor="black" PlaceholderColor="black" Keyboard="Numeric" Mask="XX/XX/XXXX" Margin="10"/>
+
+                <Entry x:Name="txt_email" Placeholder="E-mail" FontAttributes="Bold" TextColor="black" PlaceholderColor="black" Margin="10"></Entry>
+
+                <control:MaskedEntry x:Name="txt_num_cel" Placeholder="Celular" FontAttributes="Bold" TextColor="black" PlaceholderColor="black" Keyboard="Numeric" Mask="(XX)XXXXXXXXX" Margin="10"/>
+
+                <Entry x:Name="txt_senha" Placeholder="Senha" FontAttributes="Bold" IsPassword="True" TextColor="black" PlaceholderColor="black" Margin="10"></Entry>
            
+            </StackLayout>
 
-                <Entry x:Name="txt_nome" Placeholder="Nome completo" FontAttributes="Bold" TextColor="White" PlaceholderColor="Gray" Margin="10"></Entry>
+            <StackLayout Margin="10, 30, 10, 0">
 
-            <control:MaskedEntry x:Name="txt_cpf" Placeholder="CPF" FontAttributes="Bold" TextColor="White" PlaceholderColor="Gray" Keyboard="Numeric" Mask="XXX.XXX.XXX-XX" Margin="10"/>
-
-                <control:MaskedEntry x:Name="txt_data_nasc" Placeholder="Data de nascimento" FontAttributes="Bold" TextColor="White" PlaceholderColor="Gray" Keyboard="Numeric" Mask="XX/XX/XXXX" Margin="10"/>
-
-            <Entry x:Name="txt_email" Placeholder="E-mail" FontAttributes="Bold" TextColor="White" PlaceholderColor="Gray" Margin="10"></Entry>
-
-            <control:MaskedEntry x:Name="txt_num_cel" Placeholder="Celular" FontAttributes="Bold" TextColor="White" PlaceholderColor="Gray" Keyboard="Numeric" Mask="(XX)XXXXXXXXX" Margin="10"/>
-
-            <Entry x:Name="txt_senha" Placeholder="Senha" FontAttributes="Bold" IsPassword="True" TextColor="White" PlaceholderColor="Gray" Margin="10"></Entry>
-
-            <Button Clicked="Button_Clicked"
+                <Button Clicked="Button_Clicked"
                 VerticalOptions="Center"
                 Text="Criar Conta"
-                TextColor="White"
+                TextColor="black"
                 BackgroundColor="Transparent"
-                BorderColor="ForestGreen"
+                BorderColor="black"
                 BorderWidth="1.5"
                 CornerRadius="50"
                 FontAttributes="Bold"
-                Margin="30">
+                Margin="0">
             </Button>
+
+            </StackLayout>
 
 
 

@@ -14,7 +14,7 @@
     <!-- colorAccent is used as the default value for colorControlActivated
          which is used to tint widgets -->
     <!--<item name="colorAccent">#FF4081</item>-->
-	  <item name="colorAccent">#ffff</item> 
+	  <item name="colorAccent">#000</item> 
   </style>
 
 	<style name="Theme.Splash" parent="android:Theme">
