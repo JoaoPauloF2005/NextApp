@@ -28,6 +28,10 @@ namespace NextApp.Services
             {
                 HttpResponseMessage response = await client.GetAsync(uri);
 
+                Console.WriteLine("_______________________________");
+                Console.WriteLine(response.Content.ReadAsStringAsync().Result);
+                Console.WriteLine("_______________________________");
+
                 if (response.IsSuccessStatusCode)
                 {
                     json_response = response.Content.ReadAsStringAsync().Result;
@@ -39,7 +43,10 @@ namespace NextApp.Services
             return json_response;
         }
 
-        /* Método que envia os dados para o servidor via post */
+
+        /**
+         * Método que envia os dados para o servidor via post
+         */
         protected static async Task<string> PostDataToService(string json_object, string rota)
         {
             string json_response;
@@ -57,6 +64,10 @@ namespace NextApp.Services
                     uri,
                     new StringContent(json_object, Encoding.UTF8, "application/json")
                 );
+
+                Console.WriteLine("_______________________________");
+                Console.WriteLine(response.Content.ReadAsStringAsync().Result);
+                Console.WriteLine("_______________________________");
 
                 if (response.IsSuccessStatusCode)
                 {
@@ -76,7 +87,7 @@ namespace NextApp.Services
             switch (status_code)
             {
                 case System.Net.HttpStatusCode.BadRequest:
-                    msg_erro = "A requisição não pode ser atendida. Tente mais tarde.";
+                    msg_erro = "A requisição não pode ser atendida agora. Tente mais tarde.";
                     break;
 
                 case System.Net.HttpStatusCode.NotFound:
@@ -101,7 +112,7 @@ namespace NextApp.Services
             }
 
             return msg_erro;
+
         }
     }
 }
-

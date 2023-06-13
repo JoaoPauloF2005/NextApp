@@ -23,19 +23,18 @@
 
                 <control:MaskedEntry x:Name="txt_cpf" Placeholder="CPF" FontAttributes="Bold" TextColor="black" PlaceholderColor="black" Keyboard="Numeric" Mask="XXX.XXX.XXX-XX" Margin="10"/>
  
-                <control:MaskedEntry x:Name="txt_data_nasc" Placeholder="Data de nascimento" FontAttributes="Bold" TextColor="black" PlaceholderColor="black" Keyboard="Numeric" Mask="XX/XX/XXXX" Margin="10"/>
 
                 <Entry x:Name="txt_email" Placeholder="E-mail" FontAttributes="Bold" TextColor="black" PlaceholderColor="black" Margin="10"></Entry>
 
-                <control:MaskedEntry x:Name="txt_num_cel" Placeholder="Celular" FontAttributes="Bold" TextColor="black" PlaceholderColor="black" Keyboard="Numeric" Mask="(XX)XXXXXXXXX" Margin="10"/>
-
+                <control:MaskedEntry x:Name="txt_data_nasc" Placeholder="Data de nascimento" FontAttributes="Bold" TextColor="black" PlaceholderColor="black" Keyboard="Numeric" Mask="XX/XX/XXXX" Margin="10"/>
+                
                 <Entry x:Name="txt_senha" Placeholder="Senha" FontAttributes="Bold" IsPassword="True" TextColor="black" PlaceholderColor="black" Margin="10"></Entry>
            
             </StackLayout>
 
             <StackLayout Margin="10, 30, 10, 0">
 
-                <Button Clicked="Button_Clicked"
+                <Button Clicked="Button_Clicked_Cadastrar"
                 VerticalOptions="Center"
                 Text="Criar Conta"
                 TextColor="black"

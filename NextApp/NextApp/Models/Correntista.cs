@@ -4,12 +4,15 @@ using System.Text;
 
 namespace NextApp.Models
 {
-    internal class Correntista
+    public class Correntista
     {
-        public int Id { get; set; }
+        public int? Id { get; set; }
         public string Nome { get; set; }
-        public string CPF { get; set; }
-        public DateTime Data_nasc { get; set; }
+        public string Email { get; set; }
+       
+        public DateTime Data_Nascimento { get; set; }
+        
+        public string Cpf { get; set; }
         public string Senha { get; set; }
     }
 }
