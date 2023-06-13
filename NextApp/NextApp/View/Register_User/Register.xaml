@@ -26,7 +26,8 @@
 
                 <Entry x:Name="txt_email" Placeholder="E-mail" FontAttributes="Bold" TextColor="black" PlaceholderColor="black" Margin="10"></Entry>
 
-                <control:MaskedEntry x:Name="txt_data_nasc" Placeholder="Data de nascimento" FontAttributes="Bold" TextColor="black" PlaceholderColor="black" Keyboard="Numeric" Mask="XX/XX/XXXX" Margin="10"/>
+                <Label Text="Data Nascimento" />
+                <DatePicker x:Name="data_nasc" />
                 
                 <Entry x:Name="txt_senha" Placeholder="Senha" FontAttributes="Bold" IsPassword="True" TextColor="black" PlaceholderColor="black" Margin="10"></Entry>
            

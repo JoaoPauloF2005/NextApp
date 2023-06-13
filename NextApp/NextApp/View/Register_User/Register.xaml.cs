@@ -22,14 +22,16 @@ namespace NextApp.View.Register_User
 
         private async void Button_Clicked_Cadastrar(object sender, EventArgs e)
         {
+            string[] cpf_pontuado = txt_cpf.Text.Split('.', '-');
+            string cpf_digitado = cpf_pontuado[0] + cpf_pontuado[1] + cpf_pontuado[2] + cpf_pontuado[3];
             try
             {
                 Models.Correntista c = await DataServiceCorrentista.SaveAsync(new Models.Correntista
                 {
                     Nome = txt_nome.Text,
                     Email = txt_email.Text,
-                    Cpf = txt_cpf.Text,
-                    Data_Nascimento = txt_data_nasc.Date,
+                    Cpf = cpf_digitado,
+                    Data_Nascimento = data_nasc.Date,
                     Senha = txt_senha.Text,
                 });
 
