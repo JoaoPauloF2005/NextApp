@@ -47,7 +47,7 @@ namespace NextApp.View.Register_User
                     /**
                      * Navegando para a Tela Inicial após cadastrar e definir os dados do Correntista.
                      */
-                    await Navigation.PushAsync(new View.Home.Inicio());
+                    await Navigation.PushAsync(new View.Login.Login());
                 }
                 else
                     throw new Exception("Ocorreu um erro ao salvar seu cadastro.");
