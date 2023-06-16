@@ -9,15 +9,134 @@
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
 
-            <StackLayout Grid.Row="0" BackgroundColor="#B20ad1" Padding="15">
+            <StackLayout Grid.Row="0" BackgroundColor="#820ad1" Padding="20" Spacing="20">
 
                 <StackLayout Orientation="Horizontal">
-                    <ImageButton HeightRequest="50" WidthRequest="50" BackgroundColor="#9b3bda" CornerRadius="50" Source="user.png"/>
-
+                    <ImageButton HeightRequest="50" WidthRequest="50" BackgroundColor="#9b3bda" CornerRadius="50" Source="user.png" Padding="10" HorizontalOptions="StartAndExpand"/>
+                    <ImageButton HeightRequest="50" WidthRequest="50" BackgroundColor="#820ad1" CornerRadius="50" Source="eye.png" Padding="10" />
+                    <ImageButton HeightRequest="50" WidthRequest="50" BackgroundColor="#820ad1" CornerRadius="50" Source="ajuda.png" Padding="10" />
+                    <ImageButton HeightRequest="50" WidthRequest="50" BackgroundColor="#820ad1" CornerRadius="50" Source="email.png" Padding="10" />
                 </StackLayout>
+
+                
+
             </StackLayout>
 
-            <StackLayout Grid.Row="1"></StackLayout>
+            <StackLayout Grid.Row="1" Padding="20" Spacing="20">
+                <Label Text="Conta" TextColor="black" FontSize="20" FontAttributes="Bold" />
+                <Label Text="R$ 0,00" TextColor="black" FontSize="24" Margin="0, -20, 0, 0" FontAttributes="Bold" />
+
+                <ScrollView Orientation="Horizontal">
+
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand" Padding="5">
+
+                        <StackLayout>
+                            <ImageButton HorizontalOptions="CenterAndExpand" Source="pix.png" CornerRadius="50" BackgroundColor="#f0f1f5" Padding="20" HeightRequest="72" WidthRequest="72" />
+                            <Label Text="Pix" FontSize="12" FontAttributes="Bold" TextColor="black" HorizontalOptions="Center"/>
+                        </StackLayout>
+
+                        <StackLayout>
+                            <ImageButton HorizontalOptions="CenterAndExpand" Source="barcode.png" CornerRadius="50" BackgroundColor="#f0f1f5" Padding="20" HeightRequest="72" WidthRequest="72" />
+                            <Label Text="Pagar" FontSize="12" FontAttributes="Bold" TextColor="black" HorizontalOptions="Center"/>
+                        </StackLayout>
+
+                        <StackLayout>
+                            <ImageButton HorizontalOptions="CenterAndExpand" Source="pegar_empres.png" CornerRadius="50" BackgroundColor="#f0f1f5" Padding="20" HeightRequest="72" WidthRequest="72" />
+                            <Label Text="      Pegar" WidthRequest="70" FontSize="12" FontAttributes="Bold" TextColor="Black" HorizontalOptions="Center"/>
+                            <Label Text=" emprestado" WidthRequest="70" Margin="0,-9,0,0" FontSize="12" FontAttributes="Bold" TextColor="Black" HorizontalOptions="Center"/>
+                        </StackLayout>
+
+                        <StackLayout>
+                            <ImageButton HorizontalOptions="CenterAndExpand" Source="transferir.png" CornerRadius="50" BackgroundColor="#f0f1f5" Padding="20" HeightRequest="72" WidthRequest="72" />
+                            <Label Text="Transferir" FontSize="12" FontAttributes="Bold" TextColor="Black" HorizontalOptions="Center"/>
+                        </StackLayout>
+
+                        <StackLayout>
+                            <ImageButton HorizontalOptions="CenterAndExpand" Source="celular.png" CornerRadius="50" BackgroundColor="#f0f1f5" Padding="20" HeightRequest="72" WidthRequest="72" />
+                            <Label Text="  Recarga de" WidthRequest="70" FontSize="12" FontAttributes="Bold" TextColor="Black" HorizontalOptions="Center"/>
+                            <Label Text="     celular" WidthRequest="70" Margin="0,-9,0,0" FontSize="12" FontAttributes="Bold" TextColor="Black" HorizontalOptions="Center"/>
+                        </StackLayout>
+
+                        <StackLayout>
+                            <ImageButton HorizontalOptions="CenterAndExpand" Source="cofrinho.png" CornerRadius="50" BackgroundColor="#f0f1f5" Padding="20" HeightRequest="72" WidthRequest="72" />
+                            <Label Text="Caixinhas" FontSize="12" FontAttributes="Bold" TextColor="Black" HorizontalOptions="Center"/>
+                        </StackLayout>
+
+                        <StackLayout>
+                            <ImageButton HorizontalOptions="CenterAndExpand" Source="cobrar.png" CornerRadius="50" BackgroundColor="#f0f1f5" Padding="20" HeightRequest="72" WidthRequest="72" />
+                            <Label Text="Cobrar" FontSize="12" FontAttributes="Bold" TextColor="Black" HorizontalOptions="Center"/>
+                        </StackLayout>
+
+                        <StackLayout>
+                            <ImageButton HorizontalOptions="CenterAndExpand" Source="coracao.png" CornerRadius="50" BackgroundColor="#f0f1f5" Padding="20" HeightRequest="72" WidthRequest="72" />
+                            <Label Text="Doação" FontSize="12" FontAttributes="Bold" TextColor="Black" HorizontalOptions="Center"/>
+                        </StackLayout>
+
+                        <StackLayout>
+                            <ImageButton HorizontalOptions="CenterAndExpand" Source="investir.png" CornerRadius="50" BackgroundColor="#f0f1f5" Padding="20" HeightRequest="72" WidthRequest="72" />
+                            <Label Text="Investir" FontSize="12" FontAttributes="Bold" TextColor="Black" HorizontalOptions="Center"/>
+                        </StackLayout>
+
+                        <StackLayout>
+                            <ImageButton HorizontalOptions="CenterAndExpand" Source="depositar.png" CornerRadius="50" BackgroundColor="#f0f1f5" Padding="20" HeightRequest="72" WidthRequest="72" />
+                            <Label Text="Depositar" FontSize="12" FontAttributes="Bold" TextColor="Black" HorizontalOptions="Center"/>
+                        </StackLayout>
+
+                        <StackLayout>
+                            <ImageButton HorizontalOptions="CenterAndExpand" Source="transferir_internac.png" CornerRadius="50" BackgroundColor="#f0f1f5" Padding="20" HeightRequest="72" WidthRequest="72" />
+                            <Label Text="Tranferir" FontSize="12" FontAttributes="Bold" TextColor="Black" HorizontalOptions="Center"/>
+                            <Label Text=" Internac." FontSize="12" Margin="0,-9,0,0" FontAttributes="Bold" TextColor="Black" HorizontalOptions="Center"/>
+                        </StackLayout>
+
+                    </StackLayout>
+
+                </ScrollView>
+
+                <Button Margin="0, 15, 0, 0" BackgroundColor="#f0f1f5" Text="Meus cartões" TextColor="black" CornerRadius="10" ImageSource="cartao.png" ContentLayout="Left, -50" Padding="0, 10, 140, 10"/>
+
+                <ScrollView Orientation="Horizontal">
+
+                    <StackLayout Orientation="Horizontal" Padding="5" Spacing="10">
+                        <Frame BackgroundColor="#f0f1f5" CornerRadius="10" WidthRequest="250" HeightRequest="40">
+                            <Label>
+                                <Label.FormattedText>
+                                    <FormattedString>
+                                        <Span FontSize="12" Text="IPO do Next: " TextColor="#820ad1" FontAttributes="Bold"/>
+                                        <Span FontSize="12" Text="Investimentos a partir de R$30 até 07/12" TextColor="Black" FontAttributes="Bold"/>
+                                    </FormattedString>
+                                </Label.FormattedText>
+                            </Label>
+                        </Frame>
+
+                        <Frame BackgroundColor="#f0f1f5" CornerRadius="10" WidthRequest="250" HeightRequest="40">
+                            <Label>
+                                <Label.FormattedText>
+                                    <FormattedString>
+                                        <Span FontSize="12" Text="25% de desconto " TextColor="#820ad1" FontAttributes="Bold"/>
+                                        <Span FontSize="12" Text="em empréstimo comportabilidade" TextColor="Black" FontAttributes="Bold"/>
+                                    </FormattedString>
+                                </Label.FormattedText>
+                            </Label>
+                        </Frame>
+
+                        <Frame BackgroundColor="#f0f1f5" CornerRadius="10" WidthRequest="250" HeightRequest="40">
+                        <Label>
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <Span FontSize="12" Text="Salve seus amigos da burocracia.                 " TextColor="black" FontAttributes="Bold"/>
+                                        <Span FontSize="12" Text="Faça um convite" TextColor="#820ad1" FontAttributes="Bold"/>
+                                    </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
+                        </Frame>
+                    </StackLayout>
+                </ScrollView>
+
+
+
+
+            </StackLayout>
+    
         </Grid>
     </ScrollView>
 </ContentPage>
