@@ -34,7 +34,7 @@
            
             </StackLayout>
 
-            <StackLayout Margin="10, 30, 10, 0">
+            <StackLayout Margin="10, 170, 10, 0">
 
                 <Button Clicked="Button_Clicked_Cadastrar"
                 VerticalOptions="Center"
