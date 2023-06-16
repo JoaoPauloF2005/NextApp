@@ -47,8 +47,7 @@ namespace NextApp.View.Login
 
                 if (c != null)
                 {
-                    //App.DadosCorrentista = c;
-                    App.Current.Properties.Add("usuario_logado", cpf_digitado);
+                    App.DadosCorrentista = c;
                     App.Current.MainPage = new NavigationPage(new View.Home.Inicio());
                     //App.Current.MainPage = new View.TelaInicial();
                 }

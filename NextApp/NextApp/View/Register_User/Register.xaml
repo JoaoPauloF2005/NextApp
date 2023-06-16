@@ -4,6 +4,7 @@
              xmlns:control="clr-namespace:Xamarin.Forms.MaskedEntry;assembly=Xamarin.Forms.MaskedEntry" xmlns:local="clr-namespace:NextApp.CustomRenderer"
              x:Class="NextApp.View.Register_User.Register"
              Title="Register"
+             
              BackgroundColor="white">
     <ContentPage.Content>
 
@@ -26,9 +27,9 @@
 
                 <Entry x:Name="txt_email" Placeholder="E-mail" FontAttributes="Bold" TextColor="black" PlaceholderColor="black" Margin="10"></Entry>
 
-                <Label Text="Data Nascimento" />
-                <DatePicker x:Name="data_nasc" />
-                
+                <control:MaskedEntry x:Name="data_nascimento" Placeholder="Data de nascimento" FontAttributes="Bold" TextColor="black" PlaceholderColor="black" Keyboard="Numeric" Mask="XX/XX/XXXX" Margin="10"/>
+
+
                 <Entry x:Name="txt_senha" Placeholder="Senha" FontAttributes="Bold" IsPassword="True" TextColor="black" PlaceholderColor="black" Margin="10"></Entry>
            
             </StackLayout>

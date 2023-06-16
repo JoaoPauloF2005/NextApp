@@ -19,6 +19,7 @@
     <PackageReference Include="Microsoft.Toolkit.Mvvm" Version="7.1.2" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
     <PackageReference Include="SQLite" Version="3.13.0" />
+    <PackageReference Include="Syncfusion.Xamarin.SfMaskedEdit" Version="21.2.10" />
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.2578" />  
     <PackageReference Include="Xamarin.Essentials" Version="1.7.6" />  
     <PackageReference Include="Xamarin.Forms.MaskedEntry" Version="1.1.0" />

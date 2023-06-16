@@ -22,6 +22,11 @@ namespace NextApp.View.Register_User
 
         private async void Button_Clicked_Cadastrar(object sender, EventArgs e)
         {
+            DateTime data_nascimento = DateTime.Now;
+
+            string dataString = data_nascimento.ToString("XX/XX/XXXX");
+
+
             string[] cpf_pontuado = txt_cpf.Text.Split('.', '-');
             string cpf_digitado = cpf_pontuado[0] + cpf_pontuado[1] + cpf_pontuado[2] + cpf_pontuado[3];
             try
@@ -31,7 +36,7 @@ namespace NextApp.View.Register_User
                     Nome = txt_nome.Text,
                     Email = txt_email.Text,
                     Cpf = cpf_digitado,
-                    Data_Nascimento = data_nasc.Date,
+                    Data_Nascimento = data_nascimento.Date,
                     Senha = txt_senha.Text,
                 });
 
