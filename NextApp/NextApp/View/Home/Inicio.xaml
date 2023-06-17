@@ -31,7 +31,7 @@
                     <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand" Padding="5">
 
                         <StackLayout>
-                            <ImageButton HorizontalOptions="CenterAndExpand" Source="pix.png" CornerRadius="50" BackgroundColor="#f0f1f5" Padding="20" HeightRequest="72" WidthRequest="72" />
+                            <ImageButton HorizontalOptions="CenterAndExpand" Source="pix.png" CornerRadius="50" BackgroundColor="#f0f1f5" Padding="20" HeightRequest="72" WidthRequest="72" Clicked="Button_Pix"/>
                             <Label Text="Pix" FontSize="12" FontAttributes="Bold" TextColor="black" HorizontalOptions="Center"/>
                         </StackLayout>
 
@@ -92,7 +92,7 @@
 
                 </ScrollView>
 
-                <Button Margin="0, 15, 0, 0" BackgroundColor="#f0f1f5" Text="Meus cartões" TextColor="black" CornerRadius="10" ImageSource="cartao.png" ContentLayout="Left, -50" Padding="0, 10, 140, 10"/>
+                <Button Margin="0, 15, 0, 0" FontAttributes="Bold" BackgroundColor="#f0f1f5" Text="Meus cartões" TextColor="black" CornerRadius="10" ImageSource="cartao.png" ContentLayout="Left, -50" Padding="0, 10, 140, 10"/>
 
                 <ScrollView Orientation="Horizontal">
 

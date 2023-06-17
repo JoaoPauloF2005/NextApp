@@ -1,4 +1,7 @@
-﻿using System.Collections.Generic;
+﻿using NextApp.Services;
+using System;
+
+using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,6 +18,12 @@ namespace NextApp.View.Home
         {
             InitializeComponent();
             NavigationPage.SetHasNavigationBar(this, false);
+        }
+
+        private void Button_Pix(object sender, System.EventArgs e)
+        {
+            Navigation.PushAsync(new View.Area_Pix.Pix());
+
         }
     }
 
