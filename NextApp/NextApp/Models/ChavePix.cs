@@ -4,7 +4,7 @@ using System.Text;
 
 namespace NextApp.Models
 {
-    internal class ChavePix
+    public class ChavePix
     {
     }
 }
