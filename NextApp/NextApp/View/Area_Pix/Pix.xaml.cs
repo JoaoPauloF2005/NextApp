@@ -21,14 +21,7 @@ namespace NextApp.View.Area_Pix
 
         }
 
-        private void Button_Clicked(object sender, EventArgs e)
-        {
-        }
-
-        private void OnLabelTapped(object sender, System.EventArgs e)
-        {
-            Navigation.PushAsync(new View.Area_Pix.Pix());
-        }
-
     }
+
+    
 }

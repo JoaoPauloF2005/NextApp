@@ -32,7 +32,7 @@
 
                         <StackLayout>
                             <ImageButton HorizontalOptions="CenterAndExpand" Source="qr_code.png" CornerRadius="50" BackgroundColor="#f0f1f5" Padding="20" HeightRequest="72" WidthRequest="72"/>
-                            <Label Text="Ler QR code" FontSize="12" FontAttributes="Bold" TextColor="black" HorizontalOptions="Center"/>
+                            <Label Text="Ler QR code" FontSize="12" FontAttributes="Bold" TextColor="black" HorizontalOptions="Center" />
                         </StackLayout>
                     </StackLayout>
                 </ScrollView>

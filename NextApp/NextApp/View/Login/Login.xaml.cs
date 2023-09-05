@@ -23,10 +23,6 @@ namespace NextApp.View.Login
         {
             Navigation.PushAsync(new View.Register_User.Register());
         }
-        private void ImageButton_Clicked(object sender, EventArgs e)
-        {
-
-        }
 
         private async void Button_Clicked_Login(object sender, EventArgs e)
         {
