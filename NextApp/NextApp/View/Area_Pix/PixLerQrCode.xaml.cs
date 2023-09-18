@@ -10,18 +10,19 @@ using Xamarin.Forms.Xaml;
 namespace NextApp.View.Area_Pix
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class LerQRCode : ContentPage
+    public partial class PixLerQrCode : ContentPage
     {
-        public LerQRCode()
+        public PixLerQrCode()
         {
             InitializeComponent();
 
             zxing.OnScanResult += (result) =>
-               Device.BeginInvokeOnMainThread(() =>
-               {
-                   lblResult.Text = result.Text;
-               });
+                Device.BeginInvokeOnMainThread(() =>
+                {
+                    lblResult.Text = result.Text;
+                });
         }
+
         protected override void OnAppearing()
         {
             base.OnAppearing();

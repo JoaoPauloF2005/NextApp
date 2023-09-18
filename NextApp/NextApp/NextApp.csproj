@@ -18,6 +18,7 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.Toolkit.Mvvm" Version="7.1.2" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="QRCoder" Version="1.4.3" />
     <PackageReference Include="SQLite" Version="3.13.0" />
     <PackageReference Include="Syncfusion.Xamarin.SfMaskedEdit" Version="21.2.10" />
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.2578" />  
@@ -29,16 +30,13 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Update="View\Area_Pix\LerQRCode.xaml.cs">
-      <DependentUpon>LerQRCode.xaml</DependentUpon>
-    </Compile>
-  </ItemGroup>
-
-  <ItemGroup>
-    <EmbeddedResource Update="View\Area_Pix\LerQRCode.xaml">
+    <EmbeddedResource Update="View\Area_Pix\EnviarPix.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="View\Area_Pix\Pix.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="View\Area_Pix\PixLerQrCode.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="View\Area_Pix\ReceberViaQRCode.xaml">

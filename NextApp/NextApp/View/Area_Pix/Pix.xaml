@@ -2,14 +2,35 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="NextApp.View.Area_Pix.Pix">
-    <ScrollView>
-        <Grid Padding="10">
-            <Grid.RowDefinitions>
-                <RowDefinition Height="auto"/>
-                <RowDefinition Height="*"/>
-            </Grid.RowDefinitions>
+
+
+    <StackLayout>
+
+        <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand"  Padding="25,0" Spacing="20" >
 
             <StackLayout Grid.Row="0" Padding="15" Spacing="20">
+                <Label Text="Área Pix" TextColor="black" FontSize="25" FontAttributes="Bold" Margin="0,40,0,0"/>
+                <Label WidthRequest="47" FontSize="15" Text="Envie e receba pagamentos a qualquer hora e dia da semana, sem pagar nada por isso." FontAttributes="Bold" Margin="0,-20,0,0"/>
+            </StackLayout>
+
+            <StackLayout>
+                
+                <ImageButton HorizontalOptions="CenterAndExpand" Source="transferir.png" CornerRadius="50" BackgroundColor="#f0f1f5" Padding="20" HeightRequest="72" WidthRequest="72"/>
+                <Label Text="Transferir" FontSize="12" FontAttributes="Bold" TextColor="black" HorizontalOptions="Center"/>
+            </StackLayout>
+
+            <StackLayout>
+                <ImageButton HorizontalOptions="CenterAndExpand" Source="copiar_colar.png" CornerRadius="50" BackgroundColor="#f0f1f5" Padding="20" HeightRequest="72" WidthRequest="72"/>
+                <Label Text="Pix Copia e Cola" FontSize="12" FontAttributes="Bold" TextColor="black" HorizontalOptions="Center"/>
+            </StackLayout>
+
+            <StackLayout>
+                <ImageButton HorizontalOptions="CenterAndExpand" Source="qr_code.png" CornerRadius="50" BackgroundColor="#f0f1f5" Padding="20" HeightRequest="72" WidthRequest="72" Clicked="LerQRCode_Clicked"/>
+                <Label Text="Ler QR code" FontSize="12" FontAttributes="Bold" TextColor="black" HorizontalOptions="Center" />
+            </StackLayout>
+        </StackLayout>
+
+        <StackLayout Grid.Row="0" Padding="15" Spacing="20">
                 <Label Text="Área Pix" TextColor="black" FontSize="25" FontAttributes="Bold" Margin="0,40,0,0"/>
                 <Label WidthRequest="47" FontSize="15" Text="Envie e receba pagamentos a qualquer hora e dia da semana, sem pagar nada por isso." FontAttributes="Bold" Margin="0,-20,0,0"/>
             </StackLayout>
@@ -18,23 +39,7 @@
                 <Label Text="Enviar" Margin="0,-230,0,0" FontSize="25" FontAttributes="Bold" TextColor="black"/>
 
                 <ScrollView Orientation="Horizontal">
-                    <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand"  Padding="25,0" Spacing="20" >
-
-                        <StackLayout>
-                            <ImageButton HorizontalOptions="CenterAndExpand" Source="transferir.png" CornerRadius="50" BackgroundColor="#f0f1f5" Padding="20" HeightRequest="72" WidthRequest="72"/>
-                            <Label Text="Transferir" FontSize="12" FontAttributes="Bold" TextColor="black" HorizontalOptions="Center"/>
-                        </StackLayout>
-
-                        <StackLayout>
-                            <ImageButton HorizontalOptions="CenterAndExpand" Source="copiar_colar.png" CornerRadius="50" BackgroundColor="#f0f1f5" Padding="20" HeightRequest="72" WidthRequest="72"/>
-                            <Label Text="Pix Copia e Cola" FontSize="12" FontAttributes="Bold" TextColor="black" HorizontalOptions="Center"/>
-                        </StackLayout>
-
-                        <StackLayout>
-                            <ImageButton HorizontalOptions="CenterAndExpand" Source="qr_code.png" CornerRadius="50" BackgroundColor="#f0f1f5" Padding="20" HeightRequest="72" WidthRequest="72"/>
-                            <Label Text="Ler QR code" FontSize="12" FontAttributes="Bold" TextColor="black" HorizontalOptions="Center" />
-                        </StackLayout>
-                    </StackLayout>
+                    
                 </ScrollView>
             </StackLayout>
 
@@ -55,7 +60,7 @@
                         </StackLayout>
 
                         <StackLayout>
-                            <ImageButton HorizontalOptions="CenterAndExpand" Source="qr_code.png" CornerRadius="50" BackgroundColor="#f0f1f5" Padding="20" HeightRequest="72" WidthRequest="72"/>
+                            <ImageButton HorizontalOptions="CenterAndExpand" Source="qr_code.png" CornerRadius="50" BackgroundColor="#f0f1f5" Padding="20" HeightRequest="72" WidthRequest="72" Clicked="RecebeViaQRCode_Clicked"/>
                             <Label Text="Meu QR Code" FontSize="12" FontAttributes="Bold" TextColor="black" HorizontalOptions="Center"/>
                         </StackLayout>
                     </StackLayout>
@@ -69,6 +74,5 @@
 
 
 
-        </Grid>
-    </ScrollView>
+        </StackLayout>
 </ContentPage>
