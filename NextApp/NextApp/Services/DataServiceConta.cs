@@ -7,7 +7,9 @@ using NextApp.Models;
 
 namespace NextApp.Services
 {
-    internal class DataServiceConta
+    public class DataServiceConta : DataService
     {
+
+        
     }
 }

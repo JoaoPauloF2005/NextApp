@@ -23,15 +23,20 @@ namespace NextApp.View.Area_Pix
 
         private void LerQRCode_Clicked(object sender, EventArgs e)
         {
-            DisplayAlert("ok", "ok", "ok");
-            //Navigation.PushAsync(new PixLerQrCode());
+            
+            Navigation.PushAsync(new PixLerQrCode());
 
         }
 
-        private void RecebeViaQRCode_Clicked(object sender, EventArgs e)
+        private void ReceberViaQRCode_Clicked(object sender, EventArgs e)
         {
             Navigation.PushAsync(new ReceberViaQRCode());
 
+        }
+
+        private void TransferirPix_Clicked(object sender, EventArgs e)
+        {
+            //Navigation.PushAsync(new ReceberViaQRCode());
         }
     }
 

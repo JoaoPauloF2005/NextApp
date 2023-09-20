@@ -4,7 +4,11 @@
              x:Class="NextApp.View.Area_Pix.ReceberViaQRCode">
     <ContentPage.Content>
         <StackLayout>
-            <Button Text="Ler um QR Code" Clicked="Button_Clicked" />
+            <Button Text="Gerar QR CODE" Clicked="Button_Clicked" />
+
+            <Label Text="QR Code vai aparecer abaixo: " />
+
+            <Image x:Name="img_qrcode" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
